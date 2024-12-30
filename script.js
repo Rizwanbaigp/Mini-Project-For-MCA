@@ -48,11 +48,20 @@ btn.addEventListener("click", ()=>{
 function takeCommand(message){
     btn.style.display = "flex";
     voice.style.display = "none";
-    if(message.includes("hello") || message.includes("hello") || message.includes("help")){
+    if(message.includes("hello") || message.includes("hello")){
         speak("hello sir what can i help you")
     }
+    if(message.includes("help")){
+        speak("yes I can help you")
+    }
     else if(message.includes("who are you") || message.includes("hu r u")){
-        speak("i am vyana virtual assistant created by rizwaan sir");
+        speak("i am vyana virtual assistant created by rizwaan sir and saumyaa mam");
+    }
+    else if(message.includes("how are you") || message.includes("how r u")){
+        speak("I am fine what about you");
+    }
+    else if(message.includes("tum kaisi ho")){
+        speak("mai bahut achchee hun aap bataayeye");
     }
     else if(message.includes("open youtube")){
         speak("opening you tube");
@@ -65,6 +74,15 @@ function takeCommand(message){
     else if(message.includes("open google")){
         speak("opening google");
         window.open("https://www.google.com/", "_blank");
+    }
+    else if(message.includes("can you talk with me")){
+        speak("yes i can talk to you");        
+    }
+    else if(message.includes("kya tum mujhse baat kar sakti ho")){
+        speak("haa me aapse baat kar sakti hun");        
+    }
+    else if(message.includes("kya tum meri madad kar sakti ho")){
+        speak("haa mai apki madad kar sakti hun btaayeye aap ko kaisee madad chahiye");        
     }
     else if(message.includes("open facebook")){
         speak("opening facebook");
