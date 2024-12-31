@@ -48,14 +48,14 @@ btn.addEventListener("click", ()=>{
 function takeCommand(message){
     btn.style.display = "flex";
     voice.style.display = "none";
-    if(message.includes("hello") || message.includes("hello")){
-        speak("hello sir what can i help you")
+    if(message.includes("hello")){
+        speak("hello sir what can i help you");
     }
-    if(message.includes("help")){
+    else if(message.includes("help")){
         speak("yes I can help you")
     }
-    else if(message.includes("who are you") || message.includes("hu r u")){
-        speak("i am vyana virtual assistant created by rizwaan sir and saumyaa mam");
+    else if(message.includes("who are you") || message.includes("hu r u") || message.includes("tumhara name kya hai") || message.includes("tumhara naam kya hai")){
+        speak("i am vyana virtual assistant created by rizwaan sir and somyaa mam");
     }
     else if(message.includes("how are you") || message.includes("how r u")){
         speak("I am fine what about you");
